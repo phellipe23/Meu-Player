@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Filmes</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .thumb {
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .thumb img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .thumb:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <!-- JSON-LD do Shrek 2 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Shrek 2 (2004) - 🌀 𝐊𝐢𝐧𝐠𝐟𝐢𝐥𝐦𝐬 ",
+    "description": "Filme Shrek 2 em vídeo hospedado externamente.",
+    "thumbnailUrl": [
+      "https://image.tmdb.org/t/p/original/ahCT50TyWcpV7P1tXzkWe3ZqH8y.jpg"
+    ],
+    "uploadDate": "2004-05-19",
+    "duration": "PT1H33M00S",
+    "contentUrl": "https://vods1.watchingvs.com/m/Shrek%202_2004_tt0298148.mp4"
+  }
+  </script>
+</head>
+<body>
+  <h1>Catálogo de Filmes</h1>
+  <div class="grid">
+    
+    <!-- Shrek 2 -->
+    <div class="thumb">
+      <a href="https://vods1.watchingvs.com/m/Shrek%202_2004_tt0298148.mp4">
+        <img src="https://image.tmdb.org/t/p/original/ahCT50TyWcpV7P1tXzkWe3ZqH8y.jpg" alt="Shrek 2 (2004)">
+      </a>
+    </div>
+    
+  </div>
+</body>
+</html>
